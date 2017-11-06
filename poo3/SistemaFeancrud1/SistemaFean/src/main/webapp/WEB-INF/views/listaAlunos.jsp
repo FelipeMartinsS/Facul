@@ -21,6 +21,9 @@
 				<td>Profissão</td>
 				<td>RG</td>
 				<td>Data de Nascimento</td>
+<!-- 				<td>Av1</td>
+				<td>Av2</td>
+				<td>Av3</td> -->
 				
 			</tr>
  
@@ -36,6 +39,9 @@
 					<td>${listValue.profissao}</td>
 					<td>${listValue.rg}</td>
 					<td><fmt:formatDate pattern="dd/MM/yyyy" value="${listValue.dataNascimento}" /></td>
+<%-- 					<td>${listValue.av1}</td> --%>
+<%-- 					<td>${listValue.av2}</td> --%>
+<%-- 					<td>${listValue.av3}</td> --%>
 				</tr>
 			</c:forEach>
 		

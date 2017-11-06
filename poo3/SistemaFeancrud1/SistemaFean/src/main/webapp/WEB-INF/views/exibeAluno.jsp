@@ -42,7 +42,19 @@
     <tr>
         <td>Data de Nascimento:</td>
         <td>${dataNascimento}</td>
-    </tr>    
+    </tr>
+        <tr>
+        <td>Av1:</td>
+        <td>${av1}</td>
+    </tr> 
+        <tr>
+        <td>av2</td>
+        <td>${av2}</td>
+    </tr> 
+        <tr>
+        <td>av3</td>
+        <td>${av3}</td>
+    </tr>     
 </table>  
 <a href="/faculdadeFean/aluno">Cadastro</a>
 <a href="/faculdadeFean/listaAlunos">Lista</a>

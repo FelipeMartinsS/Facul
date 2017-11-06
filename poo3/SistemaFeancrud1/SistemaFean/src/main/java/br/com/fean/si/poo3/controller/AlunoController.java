@@ -20,10 +20,14 @@ import model.Aluno;
 @Controller
 public class AlunoController {
 
+	static List<Aluno> alunos = new ArrayList<Aluno>();
+	
  @RequestMapping(value = "/aluno", method = RequestMethod.GET) 
  public ModelAndView aluno() {
   return new ModelAndView("aluno", "command", new Aluno());
  }
+ 
+
 
  @RequestMapping(value = "/addAluno", method = RequestMethod.POST)
  public String adicionarAluno(
@@ -40,6 +44,10 @@ public class AlunoController {
    model.addAttribute("rg", aluno.getRg());
    model.addAttribute("dataNascimento", sdf.format(aluno.getDataNascimento()));
    model.addAttribute("profissao", aluno.getProfissao());
+/*   model.addAttribute("Av1", aluno.getNota().getNotaAv1());
+   model.addAttribute("Av2", aluno.getNota().getNotaAv2());
+   model.addAttribute("Av3", aluno.getNota().getNotaAv3());*/
+  
 		
 
    List<Aluno> alunos = (List<Aluno>) request.getSession().getAttribute("alunos");
@@ -51,6 +59,12 @@ public class AlunoController {
 		
    return "exibeAluno";
 }
+ 
+	public String verificarMatriculaESenha(String matricula, String senha) {
+		
+		//return alunoService.verificarMatriculaESenha(matricula, senha, alunos);
+		return null;
+	}
 	
 	@RequestMapping(value = "/listaAlunos", method = RequestMethod.GET)
 	public String listaralunos(

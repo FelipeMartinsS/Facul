@@ -5,6 +5,10 @@ import java.util.Date;
 public class Aluno {
     
     private String nome;
+    private String sobreNome;
+    private String matricula;
+    private String senha;
+    private Nota nota;
     private String cpf;
     private String rg;
     private String telefone;
@@ -12,6 +16,30 @@ public class Aluno {
     private String descricao;
     private String profissao;
     private Date dataNascimento;
+    
+	public Aluno(String nome, String sobreNome, String matricula, String senha, Nota nota) {
+		
+		this.nome = nome;
+		this.sobreNome = sobreNome;
+		this.matricula = matricula;
+		this.senha = senha;
+		this.nota = nota;
+	}
+	
+	public Aluno() {
+		
+
+	}
+	
+	
+	
+	public Aluno(String nome, String sobreNome, String matricula, String senha) {
+		
+		this.nome = nome;
+		this.sobreNome = sobreNome;
+		this.matricula = matricula;
+		this.senha = senha;
+	}
     
     public String getNome() {
          return nome;
@@ -79,4 +107,37 @@ public class Aluno {
          this.profissao = profissao;
     }
 
+	public String getSobreNome() {
+		return sobreNome;
+	}
+
+	public void setSobreNome(String sobreNome) {
+		this.sobreNome = sobreNome;
+	}
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public Nota getNota() {
+		return nota;
+	}
+
+	public void setNota(Nota nota) {
+		this.nota = nota;
+	}
+
+    
 }
