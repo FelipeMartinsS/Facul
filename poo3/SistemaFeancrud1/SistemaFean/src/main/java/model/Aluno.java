@@ -2,7 +2,7 @@ package model;
 
 import java.util.Date;
 
-public class Cliente {
+public class Aluno {
     
     private String nome;
     private String cpf;
@@ -12,7 +12,6 @@ public class Cliente {
     private String descricao;
     private String profissao;
     private Date dataNascimento;
-    private float salario;
     
     public String getNome() {
          return nome;
@@ -70,13 +69,7 @@ public class Cliente {
          this.dataNascimento = dataNascimento;
     }
 
-    public float getSalario() {
-         return salario;
-    }
 
-    public void setSalario(float salario) {
-         this.salario = salario;
-    }
 
     public String getProfissao() {
          return profissao;

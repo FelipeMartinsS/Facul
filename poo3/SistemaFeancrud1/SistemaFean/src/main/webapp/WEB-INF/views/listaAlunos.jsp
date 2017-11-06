@@ -5,12 +5,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Lista de Clientes Cadastrados</title>
+    <title>Lista de Alunos Cadastrados</title>
 </head>
 <body>
-	<h2>Lista de Clientes Cadastrados</h2>
+	<h2>Lista de Alunos Cadastrados</h2>
  
-	<c:if test="${not empty clientes}">
+	<c:if test="${not empty alunos}">
 		<table>
 			<tr>
 				<td>Nome</td>
@@ -20,13 +20,12 @@
 				<td>Descrição</td>
 				<td>Profissão</td>
 				<td>RG</td>
-				<td>Salário</td>
 				<td>Data de Nascimento</td>
 				
 			</tr>
  
 		
-			<c:forEach var="listValue" items="${clientes}">
+			<c:forEach var="listValue" items="${alunos}">
 				
 				<tr>
 					<td>${listValue.nome}</td>
@@ -36,7 +35,6 @@
 					<td>${listValue.descricao}</td>
 					<td>${listValue.profissao}</td>
 					<td>${listValue.rg}</td>
-					<td>${listValue.salario}</td>
 					<td><fmt:formatDate pattern="dd/MM/yyyy" value="${listValue.dataNascimento}" /></td>
 				</tr>
 			</c:forEach>
@@ -44,7 +42,7 @@
 		</table>
  
 	</c:if>
-	<a href="/faculdadeFean/cliente">Cadastro</a>
+	<a href="/faculdadeFean/aluno">Cadastro</a>
 	
 </body>
 </html>

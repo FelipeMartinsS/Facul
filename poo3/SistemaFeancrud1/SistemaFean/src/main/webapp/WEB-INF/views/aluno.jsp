@@ -3,12 +3,12 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-    <title>Cadastro de Cliente</title>
+    <title>Cadastro de Aluno</title>
 </head>
 <body>
 
-<h2>Formulário de Cadastro de Cliente</h2>
-<form:form method="POST" action="/faculdadeFean/addCliente">
+<h2>Formulário de Cadastro de Aluno</h2>
+<form:form method="POST" action="/faculdadeFean/addAluno">
    <table>
     <tr>
         <td><form:label path="nome">Nome></form:label></td>
@@ -25,10 +25,6 @@
     <tr>
         <td><form:label path="endereco">Endereço:</form:label></td>
         <td><form:textarea path="endereco" /></td>
-    </tr>
-    <tr>
-        <td><form:label path="salario">Salário:</form:label></td>
-        <td><form:input path="salario" /></td>
     </tr>        
     <tr>
         <td><form:label path="telefone">Telefone:</form:label></td>
@@ -53,7 +49,7 @@
     </tr>
 </table>  
 </form:form>
-<a href="/faculdadeFean/listaClientes">Lista</a>
+<a href="/faculdadeFean/listaAlunos">Lista</a>
 
 </body>
 </html>

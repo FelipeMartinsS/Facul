@@ -5,11 +5,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Exibe Detalhes do Cliente</title>
+    <title>Exibe Detalhes do Aluno</title>
 </head>
 <body>
 
-<h2>Detalhes do Cliente Cadastrado</h2>
+<h2>Detalhes do Aluno Cadastrado</h2>
    <table>
     <tr>
         <td>Nome:</td>
@@ -22,11 +22,7 @@
     <tr>
         <td>RG:</td>
         <td>${rg}</td>
-    </tr>    
-    <tr>
-        <td>Salário:</td>
-        <td>${salario}</td>
-    </tr>    
+    </tr>       
     <tr>
         <td>Endereço:</td>
         <td>${endereco}</td>
@@ -48,8 +44,8 @@
         <td>${dataNascimento}</td>
     </tr>    
 </table>  
-<a href="/faculdadeFean/cliente">Cadastro</a>
-<a href="/faculdadeFean/listaClientes">Lista</a>
+<a href="/faculdadeFean/aluno">Cadastro</a>
+<a href="/faculdadeFean/listaAlunos">Lista</a>
 
 </body>
 </html>
